@@ -11,6 +11,7 @@ ____
 In our case, the smoothing of the image will be made from a Gaussian blur.
 
 The Gaussian function is a continuous function that takes as input a real number and returns a real number :
+
 $$ f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
 
 This function is used to generate a Gaussian convolution kernel modifying the neighboring pixels according to the content of the matrix. The impacted neighboring pixels will be more or less numerous depending on the size of the matrix and more or less modified depending on the standard deviation (sigma).
